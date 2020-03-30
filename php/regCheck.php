@@ -2,6 +2,7 @@
 
 
 	if(isset($_POST['submit'])){
+		$id=$_POST['uid'];
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		$email = $_POST['email'];
@@ -15,7 +16,7 @@
 		if($row[]){
 		}*/
 
-		$sql = "insert into users values('{$username}','{$password}','{$email}', '{$type}')";
+		$sql = "insert into users values('{$id}','{$username}','{$password}','{$email}', '{$type}')";
 		if(mysqli_query($con, $sql)){
 			echo "Registration done!";
 			header("location:../views/home.php");
