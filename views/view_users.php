@@ -20,7 +20,7 @@
 		
 		<table border=1>
 			<tr>
-				<td>ID</td>
+				
 				<td>USERNAME</td>
 				<td>PASSWORD</td>
 				<td>Email</td>
@@ -31,7 +31,7 @@
 	<?php	while($row = mysqli_fetch_assoc($result)){ ?>
 		
 		<tr>
-			<td><?=$row['id']?></td>
+			
 			<td><?=$row['username']?></td>
 			<td><?=$row['password']?></td>
 			<td><?=$row['email']?></td>
