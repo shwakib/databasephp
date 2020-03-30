@@ -29,6 +29,7 @@
 			else
 			{
 				echo "Incorrect";
+				header("location: ../views/login.html");
 			}
 		}
 		

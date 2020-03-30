@@ -5,6 +5,12 @@
 	if(!isset($_SESSION['user'])) {
 		header("location:login.html");
 	}
+
+
+	
+
+
+
 ?>
 
 
@@ -18,11 +24,15 @@
 
 		<a href="add.php"> Create User</a> | 
 		<a href="view_users.php"> View Users</a> | 
-		<a href="../php/logout.php"> logout</a> 
+		<a href="changepassword.html">Change password</a>|
+		<a href="../php/logout.php"> Logout</a>
+		 <br>
 		<br>
 
 		Name: <?=$_SESSION['user']['uname']?> <br>
 		Type: <?=$_SESSION['user']['utype']?> <br>
-		Email: <?=$_SESSION['user']['uemail']?>
+		Email: <?=$_SESSION['user']['uemail']?><br>
+
+		
 </body>
 </html>

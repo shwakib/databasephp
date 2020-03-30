@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2020 at 11:35 AM
+-- Generation Time: Mar 30, 2020 at 06:52 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -59,6 +59,7 @@ INSERT INTO `user` (`name`, `id`, `password`, `gender`, `email`, `dob`, `bg`, `i
 --
 
 CREATE TABLE `users` (
+  `uid` int(11) NOT NULL,
   `uname` text NOT NULL,
   `upassword` text NOT NULL,
   `uemail` text NOT NULL,
@@ -69,11 +70,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`uname`, `upassword`, `uemail`, `utype`) VALUES
-('admin', 'admin', 'admin@gmail.com', 'admin'),
-('asbjas', 'jsdhbjd', 'askjcbkadcj', 'kdsjckd'),
-('asbjas', 'jsdhbjd', 'askjcbkadcj', 'kdsjckd'),
-('hascjh', 'djchaj', 'jdchajdc', 'jchjadc');
+INSERT INTO `users` (`uid`, `uname`, `upassword`, `uemail`, `utype`) VALUES
+(1234, 'wakib', '741852963', 'wakib@gmail.com', 'Superuser');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -19,7 +19,7 @@
 <body>
 
 		<a href="home.php"> Back</a> | 
-		<a href="logout.php"> logout</a> 
+		<a href="../php/logout.php"> Logout</a> 
 		<br>
 		
 		<table border=1>
@@ -42,7 +42,7 @@
 			<td><?=$row['utype']?></td>
 			<td>
 				<a href="edit.php?id=<?=$row['uid']?>">Edit</a> |
-				<a href="delete.php?id=<?=$row['uid']?>">Delete</a> 
+				<a href="../php/delete.php?id=<?=$row['uid']?>">Delete</a> 
 			</td>
 		</tr>
 	<?php } ?>
